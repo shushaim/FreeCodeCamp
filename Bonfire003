@@ -1,0 +1,23 @@
+function end(str, target) {
+  var strL = str.length;
+  var tarL = target.length;
+  if (tarL > strL){
+    return false;
+  }
+  else {
+    var strTest = str.slice(strL - tarL);
+    if (strTest === target){
+      return true;
+    }
+    else {
+      return false;
+    }
+      
+  }
+
+  
+
+
+}
+
+end("Bastian", "n");
