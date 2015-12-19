@@ -1,0 +1,25 @@
+function mutation(arr) {
+  var arr1 = arr[0].toLowerCase();
+  var arr2 = arr[1].toLowerCase();
+  var l1 = arr1.length;
+  var l2 = arr2.length;
+  var ans = [];
+  
+  for (var i = 0; i < l2; i++){
+    ans[i] = arr1.search(arr2[i]);  
+  }
+  
+  for (var j = 0; j < l1; j++){
+    if (ans[j] === -1){
+      return false;
+      break;
+    }  
+  }
+  
+  return true;  
+    
+    
+    
+}
+
+mutation(["hEllo", "k"]);
