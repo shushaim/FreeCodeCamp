@@ -1,0 +1,31 @@
+function golfScore(par, strokes) {
+  // Only change code below this line
+  var dif = strokes - par;
+  if (strokes == 1){
+    return "Hole-in-one!";
+  }
+  else{
+    switch(dif) {
+      case -3:
+        return "Eagle";
+      case -2:
+        return "Eagle";
+      case -1:
+        return "Birdie";
+      case 0:
+        return "Par";
+      case 1:
+        return "Bogey";
+      case 2:
+        return "Double Bogey";
+      case 3:
+        return "Go Home!";
+    }
+  }
+  
+  
+  // Only change code above this line
+}
+
+// Change these values to test
+golfScore(5, 8);
